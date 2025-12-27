@@ -1,5 +1,151 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-image: url(../images/cover-image-dark.png);
+  background-repeat: no-repeat;
+  object-fit: cover;
+  object-position: center;
+  background-attachment: fixed;
+  padding: 0.625rem;
+}
+
+.title-decor {
+  color: var(--title-color);
+  background-color: var(--accent-color);
+  font-family: inherit;
+}
+
+/* header */
+
+.header {
+  display: grid;
+  block-size: 100vh;
+  min-height: 668px;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.header__theme-menu {
+  justify-self: end;
+  align-self: center;
+}
+
+.header__theme-menu-item:not(:last-child) {
+  margin-block-end: 13px;
+}
+
+.header__title {
+  align-self: end;
+  color: rgb(219 0 255 / 1);
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  font-weight: 700;
+  line-height: 82.5%;
+  text-align: left;
+  text-shadow: 4px 4px 0 var(--accent-color);
+}
+
+.header-subtitle {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  text-align: left;
+  height: min-content;
+}
+
+.header__theme-menu-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  color: rgb(255 0 112 / 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+}
+
+.header__decorative-element {
+  position: absolute;
+  color: rgb(255 0 112 / 1);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 25px;
+  text-align: center;
+  right: 19px;
+  top: 10px;
+}
+
+.header__decorative-element::after {
+  content: '';
+  display: inline-block;
+  margin-left: 10px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  box-shadow: 0 0 4px 2px rgb(255 0 112 / 1);
+  background: rgb(255 0 112 / 1);
+}
+
+.decorative-element_type_top-bottom::before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 25.98px;
+  height: 27.86px;
+  background: transparent;
+  top: 10px;
+  right: 10px;
+  border-right: 1px solid rgb(255 0 112 / 1);
+  border-top: 1px solid rgb(255 0 112 / 1);
+}
+
+.decorative-element_type_top-bottom::after {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 25.98px;
+  height: 27.86px;
+  background: transparent;
+  bottom: 10px;
+  left: 10px;
+  border-left: 1px solid rgb(255 0 112 / 1);
+  border-bottom: 1px solid rgb(255 0 112 / 1);
+}
+
+/* about */
+
+.about {
+  padding-block-start: 40px;
+  font-family: 'IBM Plex Mono', sans-serif;
+}
+
+.about__title {
+  color: var(--accent-color);
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 23.4px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-block-end: 20px;
+}
+
+.article__card--description {
+  color: rgb(241 178 206 / 1);
+  font-family: 'IBM Plex Mono';
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23.4px;
+  text-align: left;
+}
+
+.article__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.about__title--list--item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }

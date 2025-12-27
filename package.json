@@ -1,0 +1,29 @@
+{
+  "name": "slozhno-sosredotochitsya-fd",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/stolenstolen/slozhno-sosredotochitsya-fd#readme",
+  "bugs": {
+    "url": "https://github.com/stolenstolen/slozhno-sosredotochitsya-fd/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stolenstolen/slozhno-sosredotochitsya-fd.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "check": "prettier --check './styles/**/*.{html,css,js}'",
+    "format": "prettier --write './styles/**/*.{html,css,js}'",
+    "lint": "stylelint './styles/**/*.css'",
+    "lintfix": "stylelint './styles/**/*.css' --fix",
+    "checkall": "npm run check && npm run lint",
+    "fixall": "npm run format && npm run lintfix"
+  },
+  "devDependencies": {
+    "prettier": "^3.7.4",
+    "stylelint": "^16.26.1"
+  }
+}
