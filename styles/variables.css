@@ -1,4 +1,13 @@
 :root {
+  --main-font-family: 'IBM Plex Mono', sans-serif;
   --accent-color: #ff0070;
-  --title-color: rgb(0 0 40 / 1);
+  --heading-logo: #db00ff;
+  --heading-color: #ff0070;
+  --card-description-color: #f1b2ce;
+  --title-color: #000028;
+  --cover-image: url(../images/cover-image-dark.png);
+  --bg-color-cover: #000028;
+  --border-button: 1px solid var(--accent-color);
+  --border-button-hover: 1px solid
+    color-mix(in sRGB, var(--accent-color), transparent 60%);
 }

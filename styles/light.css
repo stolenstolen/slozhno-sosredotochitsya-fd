@@ -1,12 +1,35 @@
-/*
-  Специально для светлой темы при наличии класса.
-  Здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-light {
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
+  --accent-color: #ff8dcb;
+  --heading-logo: #ffc2e6;
+  --heading-color: #353430;
+  --card-description-color: #353430;
+  --title-color: #353430;
+  --cover-image: url(../images/cover-image-light.png);
+  --bg-color-cover: #fff1f7;
+  --border-button: #353430;
+  --border-button-hover: 1px solid
+    color-mix(in sRGB, var(--heading-color), transparent 60%);
+
+  .header__decorative-element {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+
+  :root {
+    --accent-color: #ff8dcb;
+    --heading-logo: #ffc2e6;
+    --card-description-color: #353430;
+    --title-color: #353430;
+    --cover-image: url(../images/cover-image-light.png);
+    --bg-color-cover: #fff1f7;
+    --border-button: #353430;
+    --border-button-hover: 1px solid
+      color-mix(in sRGB, var(--accent-color), transparent 60%);
+  }
+
+  .header__decorative-element {
+    display: none;
+  }
 }

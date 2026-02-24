@@ -15,8 +15,8 @@
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "check": "prettier --check './styles/**/*.{html,css,js}'",
-    "format": "prettier --write './styles/**/*.{html,css,js}'",
+    "check": "prettier --check '**/*.{html,css,js}'",
+    "format": "prettier --write '**/*.{html,css,js}'",
     "lint": "stylelint './styles/**/*.css'",
     "lintfix": "stylelint './styles/**/*.css' --fix",
     "checkall": "npm run check && npm run lint",

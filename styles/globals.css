@@ -10,6 +10,7 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
+  background-color: var(--bg-color-cover);
 }
 
 h1,
@@ -20,6 +21,7 @@ h5,
 h6,
 p {
   margin: 0;
+  font-size: unset;
 }
 
 ul {
@@ -39,4 +41,13 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  text-decoration: none;
+}
+
+button:focus,
+:focus-visible {
+  outline: none;
 }
