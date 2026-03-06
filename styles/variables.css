@@ -1,5 +1,5 @@
 :root {
-  --main-font-family: 'IBM Plex Mono', sans-serif;
+  --main-font-family: 'IBM Plex Mono', monospace;
   --accent-color: #ff0070;
   --heading-logo: #db00ff;
   --heading-color: #ff0070;

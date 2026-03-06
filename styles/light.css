@@ -7,11 +7,19 @@
   --cover-image: url(../images/cover-image-light.png);
   --bg-color-cover: #fff1f7;
   --border-button: #353430;
+  --footer-shadow-color: #ff0070;
   --border-button-hover: 1px solid
     color-mix(in sRGB, var(--heading-color), transparent 60%);
 
   .header__decorative-element {
     display: none;
+  }
+
+  @media (width >= 1024px) {
+
+    .footer__title-decor {
+      text-shadow: 2px 2px 0 var(--footer-shadow-color);
+    }
   }
 }
 
@@ -20,13 +28,14 @@
   :root {
     --accent-color: #ff8dcb;
     --heading-logo: #ffc2e6;
+    --heading-color: #353430;
     --card-description-color: #353430;
     --title-color: #353430;
     --cover-image: url(../images/cover-image-light.png);
     --bg-color-cover: #fff1f7;
     --border-button: #353430;
     --border-button-hover: 1px solid
-      color-mix(in sRGB, var(--accent-color), transparent 60%);
+      color-mix(in sRGB, var(--heading-color), transparent 60%);
   }
 
   .header__decorative-element {
